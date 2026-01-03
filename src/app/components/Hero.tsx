@@ -80,7 +80,6 @@ export function Hero() {
         {/* Additional breathing orbs */}
         <motion.div
           className="absolute -m-32 w-64 h-64 bg-gradient-to-br from-rose-400/30 to-peach-300/25 rounded-full blur-2xl"
-          style={{ willChange: 'transform' }}
           animate={{
             x: [400, -150, 600, 100, 400],
             y: [-100, 400, 100, -50, -100],
@@ -96,7 +95,6 @@ export function Hero() {
 
         <motion.div
           className="absolute -m-40 w-80 h-80 bg-gradient-to-br from-pink-400/25 to-rose-300/30 rounded-full blur-3xl"
-          style={{ willChange: 'transform' }}
           animate={{
             x: [700, 100, 500, -100, 700],
             y: [300, -100, 500, 200, 300],
@@ -113,7 +111,6 @@ export function Hero() {
         {/* Small floating particles */}
         <motion.div
           className="absolute -m-16 w-32 h-32 bg-gradient-to-br from-rose-500/40 to-pink-400/35 rounded-full blur-xl"
-          style={{ willChange: 'transform' }}
           animate={{
             x: [-50, 500, 800, 200, -50],
             y: [200, -50, 400, 600, 200],
@@ -127,7 +124,6 @@ export function Hero() {
 
         <motion.div
           className="absolute -m-20 w-40 h-40 bg-gradient-to-br from-peach-400/35 to-rose-400/30 rounded-full blur-xl"
-          style={{ willChange: 'transform' }}
           animate={{
             x: [600, -100, 400, 900, 600],
             y: [500, 100, -50, 300, 500],
@@ -141,7 +137,6 @@ export function Hero() {
 
         <motion.div
           className="absolute -m-12 w-24 h-24 bg-gradient-to-br from-pink-500/45 to-rose-400/40 rounded-full blur-lg"
-          style={{ willChange: 'transform' }}
           animate={{
             x: [300, 700, -100, 500, 300],
             y: [400, 0, 500, 100, 400],
@@ -157,7 +152,6 @@ export function Hero() {
         {/* Extra wandering particles */}
         <motion.div
           className="absolute -m-24 w-48 h-48 bg-gradient-to-br from-rose-300/35 to-pink-300/30 rounded-full blur-2xl"
-          style={{ willChange: 'transform' }}
           animate={{
             x: [100, 600, 200, 800, 100],
             y: [-50, 300, 600, 100, -50],

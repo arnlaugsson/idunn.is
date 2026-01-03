@@ -11,7 +11,7 @@ export function Header() {
       const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-      
+
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth'
@@ -42,22 +42,44 @@ export function Header() {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#testimonials"
-              onClick={(e) => scrollToSection(e, 'testimonials')}
-              className="text-gray-700 hover:text-rose-600 transition-colors focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded px-2 py-1"
-            >
-              Ummæli
-            </a>
-            <a
-              href="#contact"
-              onClick={(e) => scrollToSection(e, 'contact')}
-              className="bg-rose-600 text-white px-6 py-2 rounded-lg hover:bg-rose-700 transition-colors focus:outline-none focus:ring-2 focus:ring-rose-700 focus:ring-offset-2"
-            >
-              Hafðu samband
-            </a>
-          </div>
+          <ul className="hidden md:flex space-x-8">
+            <li>
+              <a
+                href="#about"
+                onClick={(e) => scrollToSection(e, 'about')}
+                className="text-gray-700 hover:text-rose-600 transition-colors focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded px-2 py-1"
+              >
+                Um mig
+              </a>
+            </li>
+            <li>
+              <a
+                href="#testimonials"
+                onClick={(e) => scrollToSection(e, 'testimonials')}
+                className="text-gray-700 hover:text-rose-600 transition-colors focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded px-2 py-1"
+              >
+                Ummæli
+              </a>
+            </li>
+            <li>
+              <a
+                href="#services"
+                onClick={(e) => scrollToSection(e, 'services')}
+                className="text-gray-700 hover:text-rose-600 transition-colors focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded px-2 py-1"
+              >
+                Þjónusta
+              </a>
+            </li>
+          </ul>
+
+          {/* Desktop Contact Button */}
+          <a
+            href="#contact"
+            onClick={(e) => scrollToSection(e, 'contact')}
+            className="hidden md:inline-block bg-rose-600 text-white px-6 py-2 rounded-lg hover:bg-rose-700 transition-colors focus:outline-none focus:ring-2 focus:ring-rose-700 focus:ring-offset-2"
+          >
+            Hafðu samband
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -75,11 +97,29 @@ export function Header() {
             <ul className="flex flex-col space-y-4">
               <li>
                 <a
+                  href="#about"
+                  onClick={(e) => scrollToSection(e, 'about')}
+                  className="block text-gray-700 hover:text-rose-600 transition-colors py-2"
+                >
+                  Um mig
+                </a>
+              </li>
+              <li>
+                <a
                   href="#testimonials"
                   onClick={(e) => scrollToSection(e, 'testimonials')}
                   className="block text-gray-700 hover:text-rose-600 transition-colors py-2"
                 >
                   Ummæli
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  onClick={(e) => scrollToSection(e, 'services')}
+                  className="block text-gray-700 hover:text-rose-600 transition-colors py-2"
+                >
+                  Þjónusta
                 </a>
               </li>
               <li>

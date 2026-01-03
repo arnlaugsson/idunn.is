@@ -33,14 +33,36 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm shadow-sm z-50 border-b border-rose-100">
       <div className="container mx-auto px-4 py-4">
         <nav className="flex justify-between items-center max-w-6xl mx-auto">
-          <a 
-            href="#" 
+          <a
+            href="#"
             onClick={scrollToTop}
             className="text-rose-700 hover:text-rose-800 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded"
           >
             <h1>Iðunn.is</h1>
           </a>
-          
+
+          {/* Desktop Navigation */}
+          <ul className="hidden md:flex space-x-8">
+            <li>
+              <a
+                href="#services"
+                onClick={(e) => scrollToSection(e, 'services')}
+                className="text-gray-700 hover:text-rose-600 transition-colors focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded px-2 py-1"
+              >
+                Þjónusta
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                onClick={(e) => scrollToSection(e, 'about')}
+                className="text-gray-700 hover:text-rose-600 transition-colors focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded px-2 py-1"
+              >
+                Um mig
+              </a>
+            </li>
+          </ul>
+
           {/* Desktop Contact Button */}
           <a 
             href="#contact" 
@@ -65,8 +87,26 @@ export function Header() {
           <div className="md:hidden mt-4 py-4 border-t border-rose-100">
             <ul className="flex flex-col space-y-4">
               <li>
-                <a 
-                  href="#contact" 
+                <a
+                  href="#services"
+                  onClick={(e) => scrollToSection(e, 'services')}
+                  className="block text-gray-700 hover:text-rose-600 transition-colors py-2"
+                >
+                  Þjónusta
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  onClick={(e) => scrollToSection(e, 'about')}
+                  className="block text-gray-700 hover:text-rose-600 transition-colors py-2"
+                >
+                  Um mig
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
                   onClick={(e) => scrollToSection(e, 'contact')}
                   className="block bg-rose-600 text-white px-6 py-2 rounded-lg hover:bg-rose-700 transition-colors text-center"
                 >

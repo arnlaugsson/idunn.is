@@ -33,22 +33,31 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm shadow-sm z-50 border-b border-rose-100">
       <div className="container mx-auto px-4 py-4">
         <nav className="flex justify-between items-center max-w-6xl mx-auto">
-          <a 
-            href="#" 
+          <a
+            href="#"
             onClick={scrollToTop}
             className="text-rose-700 hover:text-rose-800 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded"
           >
             <h1>Iðunn.is</h1>
           </a>
-          
-          {/* Desktop Contact Button */}
-          <a 
-            href="#contact" 
-            onClick={(e) => scrollToSection(e, 'contact')}
-            className="hidden md:inline-block bg-rose-600 text-white px-6 py-2 rounded-lg hover:bg-rose-700 transition-colors focus:outline-none focus:ring-2 focus:ring-rose-700 focus:ring-offset-2"
-          >
-            Hafðu samband
-          </a>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            <a
+              href="#testimonials"
+              onClick={(e) => scrollToSection(e, 'testimonials')}
+              className="text-gray-700 hover:text-rose-600 transition-colors focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded px-2 py-1"
+            >
+              Ummæli
+            </a>
+            <a
+              href="#contact"
+              onClick={(e) => scrollToSection(e, 'contact')}
+              className="bg-rose-600 text-white px-6 py-2 rounded-lg hover:bg-rose-700 transition-colors focus:outline-none focus:ring-2 focus:ring-rose-700 focus:ring-offset-2"
+            >
+              Hafðu samband
+            </a>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -65,8 +74,17 @@ export function Header() {
           <div className="md:hidden mt-4 py-4 border-t border-rose-100">
             <ul className="flex flex-col space-y-4">
               <li>
-                <a 
-                  href="#contact" 
+                <a
+                  href="#testimonials"
+                  onClick={(e) => scrollToSection(e, 'testimonials')}
+                  className="block text-gray-700 hover:text-rose-600 transition-colors py-2"
+                >
+                  Ummæli
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
                   onClick={(e) => scrollToSection(e, 'contact')}
                   className="block bg-rose-600 text-white px-6 py-2 rounded-lg hover:bg-rose-700 transition-colors text-center"
                 >

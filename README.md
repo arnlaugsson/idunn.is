@@ -1,88 +1,196 @@
 # Iðunn Garðarsdóttir
 
-Professional portfolio website for Iðunn Garðarsdóttir - Icelandic language specialist, proofreader, and legal professional.
+> Professional portfolio website showcasing services in proofreading, content creation, and legal expertise.
 
-## About
+[![CI](https://github.com/arnlaugsson/idunn.is/actions/workflows/ci.yml/badge.svg)](https://github.com/arnlaugsson/idunn.is/actions/workflows/ci.yml)
+[![Deploy](https://github.com/arnlaugsson/idunn.is/actions/workflows/deploy.yml/badge.svg)](https://github.com/arnlaugsson/idunn.is/actions/workflows/deploy.yml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2ffc3ee2-3b6d-46dc-b90f-246c784dc350/deploy-status)](https://app.netlify.com/projects/idunnis-previews/deploys)
 
-This website showcases professional services including:
-- **Prófarkalestur** (Proofreading) - Professional proofreading and editing services
-- **Textagerð** (Content Creation) - High-quality writing and content development
-- **Lögfræði** (Legal Expertise) - Legal consulting and advisory services
+**Live Site:** [idunn.is](https://idunn.is)
+
+---
+
+## Overview
+
+A modern, responsive portfolio website built with React and TypeScript. Features smooth animations, accessible UI components, and automatic deployment to GitHub Pages.
+
+### Services Offered
+
+- **Prófarkalestur** — Professional proofreading and editing
+- **Textagerð** — High-quality content creation and writing
+- **Lögfræði** — Legal consulting and advisory services
+
+---
 
 ## Tech Stack
 
-- **Framework**: React 18.3 with TypeScript
-- **Build Tool**: Vite 6
-- **Styling**: Tailwind CSS 4
-- **UI Components**: Radix UI primitives
-- **Animations**: Motion library (Framer Motion)
-- **Icons**: Lucide React
-- **Forms**: React Hook Form
+| Category | Technology |
+|----------|-----------|
+| **Framework** | React 18.3 with TypeScript |
+| **Build Tool** | Vite 6 |
+| **Styling** | Tailwind CSS 4 |
+| **UI Components** | Radix UI primitives |
+| **Animations** | Motion (Framer Motion) |
+| **Icons** | Lucide React |
+| **Forms** | React Hook Form |
+| **Code Quality** | ESLint 9 with TypeScript & React plugins |
+| **Deployment** | GitHub Pages with GitHub Actions |
+
+---
 
 ## Features
 
-- Fully responsive design optimized for all devices
-- Smooth scrolling navigation with anchor links
-- Animated hero section with gradient effects
-- Contact section with multiple communication channels
-- Optimized performance with lazy loading
-- Accessible UI components (WCAG compliant)
+- **Responsive Design** — Optimized for all devices from mobile to desktop
+- **Smooth Animations** — Animated hero section with gradient effects
+- **Accessible UI** — WCAG compliant components with proper semantic HTML
+- **Type-Safe** — Full TypeScript coverage for robust development
+- **CI/CD** — Automated testing, linting, and deployment
+- **Performance** — Optimized builds with lazy loading and code splitting
 
-## Development
+---
 
-Install dependencies:
+## Getting Started
+
+### Prerequisites
+
+- Node.js 20.x or later
+- pnpm 9.x or later
+
+### Installation
+
 ```bash
+# Clone the repository
+git clone https://github.com/arnlaugsson/idunn.is.git
+cd idunn.is
+
+# Install dependencies
 pnpm install
 ```
 
-Start development server (with hot reload):
+### Development
+
 ```bash
+# Start development server (with hot reload)
 pnpm dev
 ```
 
-Build for production:
-```bash
-pnpm build
-```
+Visit [http://localhost:5173](http://localhost:5173) to view the site.
 
-Preview production build locally:
+### Building
+
 ```bash
+# Create production build
+pnpm build
+
+# Preview production build locally
 pnpm preview
 ```
+
+### Linting
+
+```bash
+# Run ESLint
+pnpm lint
+```
+
+---
 
 ## Project Structure
 
 ```
+idunn.is/
+├── .github/
+│   └── workflows/          # GitHub Actions workflows (CI/CD)
+├── public/                 # Static assets
+│   └── CNAME              # Custom domain configuration
 ├── src/
 │   ├── app/
-│   │   ├── components/     # React components
-│   │   │   ├── ui/        # Reusable UI components
+│   │   ├── components/    # React components
+│   │   │   ├── ui/       # Reusable UI components (Radix UI)
 │   │   │   ├── Header.tsx
 │   │   │   ├── Hero.tsx
 │   │   │   ├── Services.tsx
 │   │   │   ├── About.tsx
+│   │   │   ├── Testimonials.tsx
 │   │   │   ├── Contact.tsx
 │   │   │   └── Footer.tsx
-│   │   └── App.tsx        # Main app component
-│   ├── assets/            # Images and static files
-│   ├── styles/            # CSS and theme files
+│   │   └── App.tsx        # Main application component
+│   ├── assets/            # Images and media files
+│   ├── styles/            # Global styles and theme
 │   └── main.tsx           # Application entry point
-├── public/                # Static assets
-└── .github/workflows/     # CI/CD configuration
+├── eslint.config.js       # ESLint configuration
+├── vite.config.ts         # Vite configuration
+└── package.json           # Project dependencies and scripts
 ```
+
+---
 
 ## Deployment
 
-This site is automatically deployed to GitHub Pages via GitHub Actions on every push to the main branch. The deployment process includes:
+### Production
 
-1. Dependency installation with pnpm
-2. Production build with Vite
-3. Deployment to GitHub Pages
-4. Custom domain configuration (idunn.is)
+This site is automatically deployed to **GitHub Pages** via GitHub Actions on every push to the main branch.
 
-**Live site**: https://idunn.is
+**Live site:** https://idunn.is
+
+**Workflow:**
+1. Push changes to GitHub
+2. GitHub Actions runs CI checks (lint + build)
+3. If successful, deploys to GitHub Pages
+4. Site is live at [idunn.is](https://idunn.is) within 2-3 minutes
+
+### PR Previews
+
+Pull requests are automatically deployed to **Netlify** for preview before merging. Each PR gets its own preview URL.
+
+**Preview deployments:** [idunnis-previews on Netlify](https://app.netlify.com/projects/idunnis-previews/deploys)
+
+### Custom Domain
+
+The custom domain `idunn.is` is configured via:
+- `public/CNAME` file in the repository
+- DNS A records pointing to GitHub Pages servers
+- HTTPS enforced via GitHub Pages SSL certificate
+
+---
+
+## Scripts Reference
+
+| Command | Description |
+|---------|-------------|
+| `pnpm dev` | Start development server with hot reload |
+| `pnpm build` | Create optimized production build |
+| `pnpm preview` | Preview production build locally |
+| `pnpm lint` | Run ESLint checks |
+
+---
+
+## Contributing
+
+### Pull Request Process
+
+1. Create a feature branch from `main`
+2. Make your changes
+3. Ensure CI passes (linting and build)
+4. Submit a pull request
+
+### Code Quality
+
+- All code must pass ESLint checks
+- TypeScript strict mode is enabled
+- Components should follow React best practices
+- Maintain accessibility standards (ARIA, semantic HTML)
+
+---
 
 ## License
 
 All rights reserved © 2026 Iðunn Garðarsdóttir
-  
+
+---
+
+## Contact
+
+For inquiries about services:
+- Visit [idunn.is](https://idunn.is)
+- Email: [idunng@gmail.com](mailto:idunng@gmail.com)

@@ -119,7 +119,6 @@ idunn.is/
 │   └── main.tsx           # Application entry point
 ├── eslint.config.js       # ESLint configuration
 ├── vite.config.ts         # Vite configuration
-├── tailwind.config.js     # Tailwind CSS configuration
 └── package.json           # Project dependencies and scripts
 ```
 

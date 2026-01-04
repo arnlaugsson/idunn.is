@@ -63,7 +63,7 @@ Once the secrets are added:
 
 - **On PR open/update**: Builds and deploys to Netlify with alias `pr-{number}`
 - **Each PR** gets its own preview URL that updates on every commit
-- **On PR close**: Posts a cleanup message
+- **On PR close**: Deletes the Netlify deployment and posts a cleanup message
 - **Production**: Still uses GitHub Pages at idunn.is (unchanged)
 
 ## Preview URL Examples

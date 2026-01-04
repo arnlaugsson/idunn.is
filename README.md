@@ -4,6 +4,7 @@
 
 [![CI](https://github.com/arnlaugsson/idunn.is/actions/workflows/ci.yml/badge.svg)](https://github.com/arnlaugsson/idunn.is/actions/workflows/ci.yml)
 [![Deploy](https://github.com/arnlaugsson/idunn.is/actions/workflows/deploy.yml/badge.svg)](https://github.com/arnlaugsson/idunn.is/actions/workflows/deploy.yml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2ffc3ee2-3b6d-46dc-b90f-246c784dc350/deploy-status)](https://app.netlify.com/projects/idunnis-previews/deploys)
 
 **Live Site:** [idunn.is](https://idunn.is)
 
@@ -126,15 +127,23 @@ idunn.is/
 
 ## Deployment
 
-### Automatic Deployment
+### Production
 
-The site is automatically deployed to GitHub Pages when changes are pushed to the `main` branch.
+This site is automatically deployed to **GitHub Pages** via GitHub Actions on every push to the main branch.
+
+**Live site:** https://idunn.is
 
 **Workflow:**
 1. Push changes to GitHub
 2. GitHub Actions runs CI checks (lint + build)
 3. If successful, deploys to GitHub Pages
 4. Site is live at [idunn.is](https://idunn.is) within 2-3 minutes
+
+### PR Previews
+
+Pull requests are automatically deployed to **Netlify** for preview before merging. Each PR gets its own preview URL.
+
+**Preview deployments:** [idunnis-previews on Netlify](https://app.netlify.com/projects/idunnis-previews/deploys)
 
 ### Custom Domain
 

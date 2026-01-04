@@ -66,7 +66,7 @@ jobs:
 
           # Find and delete deployments with the PR alias
           echo "$DEPLOYS" | jq -r --arg alias "pr-$PR_NUMBER" \
-            '.[] | select(.name == $alias or .deploy_ssl_url | contains($alias)) | .id' | \
+            '.[] | select(.deploy_ssl_url | contains($alias)) | .id' | \
           while read deploy_id; do
             if [ -n "$deploy_id" ]; then
               echo "Deleting deployment: $deploy_id"

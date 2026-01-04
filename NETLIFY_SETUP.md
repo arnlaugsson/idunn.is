@@ -23,7 +23,7 @@ npm install -g netlify-cli
 netlify login
 
 # Create a new site
-netlify sites:create --name idunn-pr-previews
+netlify sites:create --name idunnis-previews
 ```
 
 ## Step 3: Get Your Netlify Auth Token
@@ -57,7 +57,7 @@ Once the secrets are added:
 1. Create a test PR
 2. The preview workflow will automatically run
 3. A comment will be posted on the PR with the preview URL
-4. Preview URL format: `https://pr-{number}--idunn-pr-previews.netlify.app`
+4. Preview URL format: `https://pr-{number}--idunnis-previews.netlify.app`
 
 ## How It Works
 
@@ -68,8 +68,8 @@ Once the secrets are added:
 
 ## Preview URL Examples
 
-- PR #5: `https://pr-5--idunn-pr-previews.netlify.app`
-- PR #12: `https://pr-12--idunn-pr-previews.netlify.app`
+- PR #5: `https://pr-5--idunnis-previews.netlify.app`
+- PR #12: `https://pr-12--idunnis-previews.netlify.app`
 
 ## Troubleshooting
 

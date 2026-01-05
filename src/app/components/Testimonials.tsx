@@ -32,7 +32,7 @@ export function Testimonials() {
                 className="bg-white p-8 rounded-lg shadow-lg border border-rose-100 hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="flex items-start mb-4">
-                  <Quote className="text-rose-600 flex-shrink-0" size={32} />
+                  <Quote className="text-rose-600 flex-shrink-0" size={32} aria-hidden="true" />
                 </div>
 
                 <blockquote className="text-gray-700 mb-6 italic leading-relaxed">

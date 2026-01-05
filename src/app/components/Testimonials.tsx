@@ -8,13 +8,8 @@ export function Testimonials() {
       role: "Starfsheiti, Fyrirtæki/Stofnun",
     },
     {
-      quote: "Ég hef unnið með Iðunni í mörg ár og hef alltaf verið mjög ánægð með þjónustu hennar. Hún er fagleg, nákvæm og mjög fljót að svara.",
-      name: "Nafn 2",
-      role: "Starfsheiti, Fyrirtæki/Stofnun",
-    },
-    {
       quote: "Frábær þjónusta! Iðunn hefur mikla reynslu og djúpan skilning á íslensku máli. Henni má treysta fyrir erfiðustu verkefnin.",
-      name: "Nafn 3",
+      name: "Nafn 2",
       role: "Starfsheiti, Fyrirtæki/Stofnun",
     },
   ];
@@ -27,10 +22,10 @@ export function Testimonials() {
             Ummæli
           </h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            Hvað segja viðskiptavinir mínir
+            Hvað segja viðskiptavinir mínir?
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className={`grid gap-8 ${testimonials.length === 1 ? 'md:grid-cols-1 max-w-xl mx-auto' : testimonials.length === 2 ? 'md:grid-cols-2 max-w-4xl mx-auto' : 'md:grid-cols-3'}`}>
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
@@ -41,7 +36,7 @@ export function Testimonials() {
                 </div>
 
                 <blockquote className="text-gray-700 mb-6 italic leading-relaxed">
-                  "{testimonial.quote}"
+                  „{testimonial.quote}“
                 </blockquote>
 
                 <div className="border-t border-rose-100 pt-4">

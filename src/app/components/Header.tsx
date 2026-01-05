@@ -54,20 +54,20 @@ export function Header() {
             </li>
             <li>
               <a
-                href="#testimonials"
-                onClick={(e) => scrollToSection(e, 'testimonials')}
-                className="text-gray-700 hover:text-rose-600 transition-colors focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded px-2 py-1"
-              >
-                Ummæli
-              </a>
-            </li>
-            <li>
-              <a
                 href="#services"
                 onClick={(e) => scrollToSection(e, 'services')}
                 className="text-gray-700 hover:text-rose-600 transition-colors focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded px-2 py-1"
               >
                 Þjónusta
+              </a>
+            </li>
+            <li>
+              <a
+                href="#testimonials"
+                onClick={(e) => scrollToSection(e, 'testimonials')}
+                className="text-gray-700 hover:text-rose-600 transition-colors focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded px-2 py-1"
+              >
+                Ummæli
               </a>
             </li>
           </ul>
@@ -106,20 +106,20 @@ export function Header() {
               </li>
               <li>
                 <a
-                  href="#testimonials"
-                  onClick={(e) => scrollToSection(e, 'testimonials')}
-                  className="block text-gray-700 hover:text-rose-600 transition-colors py-2"
-                >
-                  Ummæli
-                </a>
-              </li>
-              <li>
-                <a
                   href="#services"
                   onClick={(e) => scrollToSection(e, 'services')}
                   className="block text-gray-700 hover:text-rose-600 transition-colors py-2"
                 >
                   Þjónusta
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#testimonials"
+                  onClick={(e) => scrollToSection(e, 'testimonials')}
+                  className="block text-gray-700 hover:text-rose-600 transition-colors py-2"
+                >
+                  Ummæli
                 </a>
               </li>
               <li>

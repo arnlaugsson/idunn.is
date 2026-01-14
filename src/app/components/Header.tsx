@@ -75,7 +75,7 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-gray-700 hover:text-rose-600 transition-colors"
+            className="md:hidden p-2 text-gray-700 hover:text-rose-600 transition-colors focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -90,7 +90,7 @@ export function Header() {
                 <a
                   href="#services"
                   onClick={(e) => scrollToSection(e, 'services')}
-                  className="block text-gray-700 hover:text-rose-600 transition-colors py-2"
+                  className="block text-gray-700 hover:text-rose-600 transition-colors py-2 focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded px-2"
                 >
                   Þjónusta
                 </a>
@@ -99,7 +99,7 @@ export function Header() {
                 <a
                   href="#about"
                   onClick={(e) => scrollToSection(e, 'about')}
-                  className="block text-gray-700 hover:text-rose-600 transition-colors py-2"
+                  className="block text-gray-700 hover:text-rose-600 transition-colors py-2 focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded px-2"
                 >
                   Um mig
                 </a>
@@ -108,7 +108,7 @@ export function Header() {
                 <a
                   href="#contact"
                   onClick={(e) => scrollToSection(e, 'contact')}
-                  className="block bg-rose-600 text-white px-6 py-2 rounded-lg hover:bg-rose-700 transition-colors text-center"
+                  className="block bg-rose-600 text-white px-6 py-2 rounded-lg hover:bg-rose-700 transition-colors text-center focus:outline-none focus:ring-2 focus:ring-rose-700 focus:ring-offset-2"
                 >
                   Hafðu samband
                 </a>

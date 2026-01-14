@@ -25,7 +25,7 @@ export function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-rose-100 hover:scale-105 hover:-translate-y-1 cursor-pointer"
+              className="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-rose-100 hover:scale-105 hover:-translate-y-1"
             >
               <div className="mb-6 inline-block p-4 bg-gradient-to-br from-rose-100 to-pink-100 rounded-lg">
                 <service.icon className="w-8 h-8 text-rose-700" />

@@ -24,36 +24,19 @@ export function About() {
             {/* Content */}
             <div className="order-1 md:order-2 bg-gradient-to-br from-rose-50 to-pink-50 p-8 md:p-10 rounded-lg shadow-lg border border-rose-100">
               <p className="text-lg text-gray-700 mb-6">
-                Ég er íslenskufræðingur og lögfræðingur að mennt með sérstaka reynslu á sviði 
-                prófarkalesturs, textagerðar og verkefnastjórnar. Ég hef unnið við fjölbreytt 
-                verkefni þar sem nákvæmni, skipulag og góð málnotkun skipta sköpum.
-              </p>
-              
-              <p className="text-lg text-gray-700 mb-6">
-                Sem íslenskufræðingur hef ég djúpan skilning á íslensku máli og málfari. Ég hef 
-                mikla reynslu af prófarkalestri, ritstjórn og textavinnslu fyrir fjölbreyttar 
-                stofnanir og fyrirtæki. Ég tek að mér verkefni af öllum stærðum – allt frá 
-                stuttum textum upp í umfangsmiklar ritgerðir og skýrslur.
+                Ég er íslenskufræðingur og lögfræðingur. Ég hef reynslu af fjölbreyttum verkefnum á sviði prófarkalesturs, ritstjórnar og textagerðar og tek að mér prófarkalestur og tengd verkefni af öllum stærðum og gerðum.
               </p>
 
               <p className="text-lg text-gray-700 mb-6">
-                Á árunum 2017-2024 starfaði ég sem aðstoðarmaður ráðherra í þremur ráðuneytum: 
-                Heilbrigðisráðuneytinu (2017-2021), Landbúnaðarráðuneytinu (2021-2024) og 
-                Innanríkisráðuneytinu (2024). Þar öðlaðist ég víðtæka reynslu af verkefnastjórn, 
-                textagerð og samskiptum á öllum stigum stjórnsýslunnar.
+                Ég lauk BA-gráðu í íslensku frá Háskóla Íslands árið 2013, BA-prófi í lögfræði árið 2015 og meistaraprófi í lögfræði árið 2017. Samhliða námi starfaði ég sem prófarkalesari á Fréttablaðinu og síðar sem löglærður fulltrúi hjá Juris lögmannsstofu (2015-2017). Á árunum 2017-2024 starfaði ég sem aðstoðarmaður ráðherra í þremur ráðuneytum; heilbrigðisráðuneytinu (2017-2021), matvælaráðuneytinu (2021-2024) og innviðaráðuneytinu (2024).
               </p>
 
               <p className="text-lg text-gray-700 mb-6">
-                Ég lauk BA-gráðu í íslensku frá Háskóla Íslands árið 2013, BA-prófi í lögfræði 
-                árið 2015 og meistaraprófi í lögfræði árið 2017. Samhliða námi starfaði ég sem 
-                löglærður fulltrúi hjá Juris lögmannsstofu (2015-2017) og sem aðstoðarkennari 
-                við Háskóla Íslands (2015-2017).
+                Í störfum mínum hef ég öðlast dýrmæta reynslu af textagerð, prófarkalestri, verkefnastjórnun og fjölbreyttum lögfræðilegum verkefnum.
               </p>
-              
+
               <p className="text-lg text-gray-700">
-                Ég er áhugakona um bókmenntir, tungumál, femínisma og stjórnmál – og auðvitað 
-                góða kaffidrykkju. Ég legg áherslu á gæði og áreiðanleika í öllu sem ég tek að mér og 
-                er laus til að sinna smærri og stærri verkefnum af fagmennsku.
+                Mín helstu áhugamál eru bókmenntir, tungumál, femínismi, stjórnmál og kaffidrykkja. Ég legg áherslu á gæði og nákvæmni í öllu sem ég tek mér fyrir hendur. Ef þú vilt vita meira, ekki hika við að hafa samband.
               </p>
             </div>
           </div>

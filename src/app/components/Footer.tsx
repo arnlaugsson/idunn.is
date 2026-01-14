@@ -4,7 +4,7 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto text-center">
           <p className="mb-2">© {new Date().getFullYear()} Iðunn Garðarsdóttir</p>
-          <p className="text-gray-400">prófarkalestur | textagerð | lögfræði</p>
+          <p className="text-gray-400">prófarkalestur | textagerð</p>
         </div>
       </div>
     </footer>

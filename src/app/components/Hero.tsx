@@ -252,7 +252,8 @@ export function Hero() {
           <a
             href="#contact"
             onClick={scrollToContact}
-            className="inline-block bg-rose-600 text-white px-8 py-4 rounded-lg hover:bg-rose-700 transition-colors shadow-lg hover:shadow-xl"
+            tabIndex={-1}
+            className="inline-block bg-rose-600 text-white px-8 py-4 rounded-lg hover:bg-rose-700 transition-colors shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-rose-700 focus:ring-offset-2"
           >
             Hafðu samband
           </a>

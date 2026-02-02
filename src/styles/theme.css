@@ -131,6 +131,62 @@
     @apply bg-background text-foreground;
     min-height: 100vh;
     min-height: 100dvh; /* Dynamic viewport height for mobile */
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+    text-rendering: optimizeSpeed;
+  }
+
+  /* Better font rendering for iOS */
+  @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+
+  /* Optimize large display fonts for retina screens */
+  h1, h2, h3, [style*="Cormorant"] {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Increase font weight on mobile for better clarity on iPhone */
+  @media (max-width: 640px) {
+    .font-light {
+      font-weight: 400 !important;
+    }
+
+    /* Make body text slightly heavier on mobile */
+    body {
+      font-weight: 400;
+    }
+
+    /* Keep headings crisp */
+    h1, h2, h3, h4 {
+      font-weight: 400;
+    }
+
+    /* Disable transforms on text for better rendering on iOS */
+    p, span, a, button, label {
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  /* iOS-specific font optimization */
+  @supports (-webkit-touch-callout: none) {
+    body {
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* Ensure minimum font sizes for better rendering */
+    .text-xs {
+      font-size: 0.8125rem !important; /* 13px instead of 12px */
+    }
+    .text-sm {
+      font-size: 0.9375rem !important; /* 15px instead of 14px */
+    }
   }
 
   /**

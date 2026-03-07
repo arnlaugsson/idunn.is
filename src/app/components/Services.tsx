@@ -33,7 +33,7 @@ export function Services() {
               className="text-4xl md:text-5xl text-stone-900"
               style={{ fontFamily: 'var(--font-heading)' }}
             >
-              Hvað get ég gert fyrir þig
+              Hvað get ég gert fyrir þig?
             </h2>
           </motion.div>
 

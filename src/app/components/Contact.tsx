@@ -1,67 +1,88 @@
 import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
+import { motion } from 'motion/react';
+
+const contactItems = [
+  {
+    icon: Mail,
+    label: 'Netfang',
+    value: 'idunng@gmail.com',
+    href: 'mailto:idunng@gmail.com',
+  },
+  {
+    icon: Phone,
+    label: 'Sími',
+    value: '663 3617',
+    href: 'tel:+3546633617',
+  },
+  {
+    icon: Linkedin,
+    label: 'LinkedIn',
+    value: 'Skoða prófíl',
+    href: 'https://www.linkedin.com/in/idunng/',
+    external: true,
+  },
+  {
+    icon: MapPin,
+    label: 'Staðsetning',
+    value: 'Reykjavík, Ísland',
+  },
+];
 
 export function Contact() {
   return (
-    <section id="contact" className="scroll-mt-20 py-20 bg-gradient-to-b from-rose-50/30 to-white">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl text-center mb-12 text-gray-900">
-            Hafðu samband
-          </h2>
-          
-          {/* Contact Information */}
-          <div className="bg-gradient-to-br from-rose-50 to-pink-50 p-8 md:p-12 rounded-lg shadow-lg border border-rose-100">
-            <p className="text-lg text-gray-700 text-center mb-8">
-              Ég er laus til að ræða verkefni og hvernig ég get aðstoðað þig. 
+    <section id="contact" className="scroll-mt-20 py-24 md:py-32 bg-white">
+      <div className="container mx-auto px-6">
+        <div className="max-w-5xl mx-auto">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+          >
+            <p className="text-sm tracking-[0.3em] uppercase text-stone-400 mb-4">
+              Samband
+            </p>
+            <h2
+              className="text-4xl md:text-5xl text-stone-900 mb-6"
+              style={{ fontFamily: 'var(--font-heading)' }}
+            >
+              Hafðu samband
+            </h2>
+            <div className="w-16 h-px bg-amber-700 mx-auto mb-8" />
+            <p className="text-stone-600 max-w-xl mx-auto leading-relaxed">
+              Ég er laus til að ræða verkefni og hvernig ég get aðstoðað þig.
               Hafðu samband fyrir frekari upplýsingar – eða bara til að spekúlera yfir kaffibolla!
             </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg border border-rose-100">
-                <div className="mb-4 p-3 bg-gradient-to-br from-rose-100 to-pink-100 rounded-full">
-                  <Mail className="w-6 h-6 text-rose-700" />
-                </div>
-                <h4 className="mb-2 text-gray-900">Netfang</h4>
-                <a 
-                  href="mailto:idunng@gmail.com" 
-                  className="text-rose-700 hover:text-rose-800 focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded px-2 py-1"
-                >
-                  idunng@gmail.com
-                </a>
-              </div>
-              <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg border border-rose-100">
-                <div className="mb-4 p-3 bg-gradient-to-br from-rose-100 to-pink-100 rounded-full">
-                  <Phone className="w-6 h-6 text-rose-700" />
-                </div>
-                <h4 className="mb-2 text-gray-900">Sími</h4>
-                <a 
-                  href="tel:+3546633617" 
-                  className="text-rose-700 hover:text-rose-800 focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded px-2 py-1"
-                >
-                  663 3617
-                </a>
-              </div>
-              <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg border border-rose-100">
-                <div className="mb-4 p-3 bg-gradient-to-br from-rose-100 to-pink-100 rounded-full">
-                  <Linkedin className="w-6 h-6 text-rose-700" />
-                </div>
-                <h4 className="mb-2 text-gray-900">LinkedIn</h4>
-                <a 
-                  href="https://www.linkedin.com/in/idunng/" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-rose-700 hover:text-rose-800 focus:outline-none focus:ring-2 focus:ring-rose-600 focus:ring-offset-2 rounded px-2 py-1"
-                >
-                  Skoða prófíl
-                </a>
-              </div>
-              <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg border border-rose-100">
-                <div className="mb-4 p-3 bg-gradient-to-br from-rose-100 to-pink-100 rounded-full">
-                  <MapPin className="w-6 h-6 text-rose-700" />
-                </div>
-                <h4 className="mb-2 text-gray-900">Staðsetning</h4>
-                <p className="text-gray-600">Reykjavík, Ísland</p>
-              </div>
-            </div>
+          </motion.div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {contactItems.map((item, index) => (
+              <motion.div
+                key={index}
+                className="text-center p-8 border border-stone-200 hover:border-stone-400 transition-colors duration-300"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+              >
+                <item.icon className="w-5 h-5 text-amber-700 mx-auto mb-4" strokeWidth={1.5} />
+                <h4 className="text-xs tracking-[0.2em] uppercase text-stone-400 mb-3">
+                  {item.label}
+                </h4>
+                {item.href ? (
+                  <a
+                    href={item.href}
+                    {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                    className="text-stone-900 hover:text-amber-700 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-700 focus:ring-offset-2 rounded"
+                  >
+                    {item.value}
+                  </a>
+                ) : (
+                  <p className="text-stone-600">{item.value}</p>
+                )}
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>

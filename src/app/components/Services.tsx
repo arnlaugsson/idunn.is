@@ -1,4 +1,5 @@
 import { BookOpen, FileText } from 'lucide-react';
+import { motion } from 'motion/react';
 
 const services = [
   {
@@ -15,32 +16,57 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="scroll-mt-20 py-20 bg-gradient-to-b from-white to-rose-50/30">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl text-center mb-12 text-gray-900">
-          Þjónusta
-        </h2>
-        
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-rose-100 hover:scale-105 hover:-translate-y-1"
+    <section id="services" className="scroll-mt-20 py-24 md:py-32 bg-white">
+      <div className="container mx-auto px-6">
+        <div className="max-w-5xl mx-auto">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+          >
+            <p className="text-sm tracking-[0.3em] uppercase text-stone-400 mb-4">
+              Þjónusta
+            </p>
+            <h2
+              className="text-4xl md:text-5xl text-stone-900"
+              style={{ fontFamily: 'var(--font-heading)' }}
             >
-              <div className="mb-6 inline-block p-4 bg-gradient-to-br from-rose-100 to-pink-100 rounded-lg">
-                <service.icon className="w-8 h-8 text-rose-700" />
-              </div>
-              <h3 className="mb-6 text-gray-900">{service.title}</h3>
-              <ul className="space-y-3">
-                {service.skills.map((skill, idx) => (
-                  <li key={idx} className="flex items-center text-gray-700">
-                    <span className="mr-2 w-1.5 h-1.5 bg-rose-500 rounded-full"></span>
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+              Hvað get ég gert fyrir þig?
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+            {services.map((service, index) => (
+              <motion.div
+                key={index}
+                className="group p-8 md:p-10 border border-stone-200 hover:border-stone-400 transition-colors duration-300 cursor-default"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
+              >
+                <div className="mb-6">
+                  <service.icon className="w-6 h-6 text-amber-700" strokeWidth={1.5} />
+                </div>
+                <h3
+                  className="text-2xl mb-6 text-stone-900"
+                  style={{ fontFamily: 'var(--font-heading)' }}
+                >
+                  {service.title}
+                </h3>
+                <ul className="space-y-3">
+                  {service.skills.map((skill, idx) => (
+                    <li key={idx} className="flex items-start gap-3 text-stone-600">
+                      <span className="mt-2 w-1 h-1 bg-amber-700 rounded-full shrink-0" />
+                      <span>{skill}</span>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

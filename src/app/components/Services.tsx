@@ -26,11 +26,11 @@ export function Services() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-sm tracking-[0.3em] uppercase text-stone-400 mb-4">
+            <p className="text-sm tracking-[0.3em] uppercase text-emerald-400 mb-4">
               Þjónusta
             </p>
             <h2
-              className="text-4xl md:text-5xl text-stone-900"
+              className="text-4xl md:text-5xl text-emerald-900"
               style={{ fontFamily: 'var(--font-heading)' }}
             >
               Hvað get ég gert fyrir þig?
@@ -41,25 +41,25 @@ export function Services() {
             {services.map((service, index) => (
               <motion.div
                 key={index}
-                className="group p-8 md:p-10 border border-stone-200 hover:border-stone-400 transition-colors duration-300 cursor-default"
+                className="group p-8 md:p-10 border border-emerald-200 hover:border-emerald-400 transition-colors duration-300 cursor-default"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6, delay: index * 0.15 }}
               >
                 <div className="mb-6">
-                  <service.icon className="w-6 h-6 text-amber-700" strokeWidth={1.5} />
+                  <service.icon className="w-6 h-6 text-emerald-600" strokeWidth={1.5} />
                 </div>
                 <h3
-                  className="text-2xl mb-6 text-stone-900"
+                  className="text-2xl mb-6 text-emerald-900"
                   style={{ fontFamily: 'var(--font-heading)' }}
                 >
                   {service.title}
                 </h3>
                 <ul className="space-y-3">
                   {service.skills.map((skill, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-stone-600">
-                      <span className="mt-2 w-1 h-1 bg-amber-700 rounded-full shrink-0" />
+                    <li key={idx} className="flex items-start gap-3 text-emerald-700">
+                      <span className="mt-2 w-1 h-1 bg-emerald-600 rounded-full shrink-0" />
                       <span>{skill}</span>
                     </li>
                   ))}

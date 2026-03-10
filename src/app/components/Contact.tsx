@@ -40,17 +40,17 @@ export function Contact() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-sm tracking-[0.3em] uppercase text-stone-400 mb-4">
+            <p className="text-sm tracking-[0.3em] uppercase text-emerald-400 mb-4">
               Samband
             </p>
             <h2
-              className="text-4xl md:text-5xl text-stone-900 mb-6"
+              className="text-4xl md:text-5xl text-emerald-900 mb-6"
               style={{ fontFamily: 'var(--font-heading)' }}
             >
               Hafðu samband
             </h2>
-            <div className="w-16 h-px bg-amber-700 mx-auto mb-8" />
-            <p className="text-stone-600 max-w-xl mx-auto leading-relaxed">
+            <div className="w-16 h-px bg-emerald-600 mx-auto mb-8" />
+            <p className="text-emerald-700 max-w-xl mx-auto leading-relaxed">
               Ég er laus til að ræða verkefni og hvernig ég get aðstoðað þig.
               Hafðu samband fyrir frekari upplýsingar – eða bara til að spekúlera yfir kaffibolla!
             </p>
@@ -60,26 +60,26 @@ export function Contact() {
             {contactItems.map((item, index) => (
               <motion.div
                 key={index}
-                className="text-center p-8 border border-stone-200 hover:border-stone-400 transition-colors duration-300"
+                className="text-center p-8 border border-emerald-200 hover:border-emerald-400 transition-colors duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <item.icon className="w-5 h-5 text-amber-700 mx-auto mb-4" strokeWidth={1.5} />
-                <h4 className="text-xs tracking-[0.2em] uppercase text-stone-400 mb-3">
+                <item.icon className="w-5 h-5 text-emerald-600 mx-auto mb-4" strokeWidth={1.5} />
+                <h4 className="text-xs tracking-[0.2em] uppercase text-emerald-400 mb-3">
                   {item.label}
                 </h4>
                 {item.href ? (
                   <a
                     href={item.href}
                     {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                    className="text-stone-900 hover:text-amber-700 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-700 focus:ring-offset-2 rounded"
+                    className="text-emerald-900 hover:text-emerald-600 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 rounded"
                   >
                     {item.value}
                   </a>
                 ) : (
-                  <p className="text-stone-600">{item.value}</p>
+                  <p className="text-emerald-700">{item.value}</p>
                 )}
               </motion.div>
             ))}

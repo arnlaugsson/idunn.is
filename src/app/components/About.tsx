@@ -3,7 +3,7 @@ import idunnImage from "../../assets/f958c31ca7c9b9737586348ffb52c0f4024fe095.pn
 
 export function About() {
   return (
-    <section id="about" className="scroll-mt-20 py-24 md:py-32 bg-stone-50">
+    <section id="about" className="scroll-mt-20 py-24 md:py-32 bg-emerald-50">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <motion.div
@@ -13,11 +13,11 @@ export function About() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-sm tracking-[0.3em] uppercase text-stone-400 mb-4">
+            <p className="text-sm tracking-[0.3em] uppercase text-emerald-400 mb-4">
               Um mig
             </p>
             <h2
-              className="text-4xl md:text-5xl text-stone-900"
+              className="text-4xl md:text-5xl text-emerald-900"
               style={{ fontFamily: 'var(--font-heading)' }}
             >
               Iðunn Garðarsdóttir
@@ -50,7 +50,7 @@ export function About() {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 0.15 }}
             >
-              <div className="space-y-6 text-stone-600 leading-relaxed">
+              <div className="space-y-6 text-emerald-700 leading-relaxed">
                 <p>
                   Ég er íslenskufræðingur og lögfræðingur. Ég hef reynslu af fjölbreyttum verkefnum á sviði prófarkalesturs, ritstjórnar og textagerðar og tek að mér prófarkalestur og tengd verkefni af öllum stærðum og gerðum.
                 </p>

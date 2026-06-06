@@ -2,43 +2,43 @@
 
 :root {
   --font-size: 16px;
-  --background: #FAF8F5;
-  --foreground: #1C1917;
+  --background: #F0FDF4;
+  --foreground: #14532D;
   --card: #FFFFFF;
-  --card-foreground: #1C1917;
+  --card-foreground: #14532D;
   --popover: #FFFFFF;
-  --popover-foreground: #1C1917;
-  --primary: #1C1917;
-  --primary-foreground: #FAF8F5;
-  --secondary: #F5F0EB;
-  --secondary-foreground: #1C1917;
-  --muted: #E7E0D8;
-  --muted-foreground: #78716C;
-  --accent: #B45309;
+  --popover-foreground: #14532D;
+  --primary: #14532D;
+  --primary-foreground: #F0FDF4;
+  --secondary: #DCFCE7;
+  --secondary-foreground: #14532D;
+  --muted: #D1FAE5;
+  --muted-foreground: #6B7280;
+  --accent: #059669;
   --accent-foreground: #FFFFFF;
   --destructive: #d4183d;
   --destructive-foreground: #ffffff;
-  --border: #D6CFC7;
+  --border: #A7F3D0;
   --input: transparent;
-  --input-background: #F5F0EB;
-  --switch-background: #D6CFC7;
+  --input-background: #DCFCE7;
+  --switch-background: #A7F3D0;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --ring: #B45309;
+  --ring: #059669;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.5rem;
-  --sidebar: #FAF8F5;
-  --sidebar-foreground: #1C1917;
-  --sidebar-primary: #1C1917;
-  --sidebar-primary-foreground: #FAF8F5;
-  --sidebar-accent: #F5F0EB;
-  --sidebar-accent-foreground: #1C1917;
-  --sidebar-border: #D6CFC7;
-  --sidebar-ring: #B45309;
+  --sidebar: #F0FDF4;
+  --sidebar-foreground: #14532D;
+  --sidebar-primary: #14532D;
+  --sidebar-primary-foreground: #F0FDF4;
+  --sidebar-accent: #DCFCE7;
+  --sidebar-accent-foreground: #14532D;
+  --sidebar-border: #A7F3D0;
+  --sidebar-ring: #059669;
 }
 
 @theme inline {
@@ -84,19 +84,19 @@
   --font-heading: 'Cormorant Garamond', serif;
   --font-body: 'Inter', sans-serif;
 
-  --color-stone-50: #FAF8F5;
-  --color-stone-100: #F5F0EB;
-  --color-stone-200: #E7E0D8;
-  --color-stone-300: #D6CFC7;
-  --color-stone-400: #A8A29E;
-  --color-stone-500: #78716C;
-  --color-stone-600: #57534E;
-  --color-stone-700: #44403C;
-  --color-stone-800: #292524;
-  --color-stone-900: #1C1917;
-  --color-amber-600: #D97706;
-  --color-amber-700: #B45309;
-  --color-amber-800: #92400E;
+  --color-stone-50: #F0FDF4;
+  --color-stone-100: #DCFCE7;
+  --color-stone-200: #BBF7D0;
+  --color-stone-300: #A7F3D0;
+  --color-stone-400: #6EE7B7;
+  --color-stone-500: #34D399;
+  --color-stone-600: #059669;
+  --color-stone-700: #047857;
+  --color-stone-800: #065F46;
+  --color-stone-900: #14532D;
+  --color-amber-600: #059669;
+  --color-amber-700: #047857;
+  --color-amber-800: #065F46;
 }
 
 @layer base {
@@ -165,7 +165,7 @@
   }
 
   ::selection {
-    background-color: #B4530920;
+    background-color: #05966920;
   }
 }
 

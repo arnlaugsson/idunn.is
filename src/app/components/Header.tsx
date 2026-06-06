@@ -54,7 +54,7 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-stone-50/95 backdrop-blur-sm border-b border-stone-300/50'
+          ? 'bg-emerald-50/95 backdrop-blur-sm border-b border-emerald-300/50'
           : 'bg-transparent'
       }`}
     >
@@ -63,10 +63,10 @@ export function Header() {
           <a
             href="#"
             onClick={scrollToTop}
-            className="cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-700 focus:ring-offset-2 rounded"
+            className="cursor-pointer focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 rounded"
             style={{ fontFamily: 'var(--font-heading)' }}
           >
-            <span className="text-2xl tracking-tight text-stone-900">Iðunn</span>
+            <span className="text-2xl tracking-tight text-emerald-900">Iðunn</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -75,7 +75,7 @@ export function Header() {
               <a
                 href="#services"
                 onClick={(e) => scrollToSection(e, 'services')}
-                className="text-sm tracking-wide uppercase text-stone-600 hover:text-stone-900 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-700 focus:ring-offset-2 rounded px-2 py-1"
+                className="text-sm tracking-wide uppercase text-emerald-700 hover:text-emerald-900 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 rounded px-2 py-1"
               >
                 Þjónusta
               </a>
@@ -84,7 +84,7 @@ export function Header() {
               <a
                 href="#about"
                 onClick={(e) => scrollToSection(e, 'about')}
-                className="text-sm tracking-wide uppercase text-stone-600 hover:text-stone-900 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-700 focus:ring-offset-2 rounded px-2 py-1"
+                className="text-sm tracking-wide uppercase text-emerald-700 hover:text-emerald-900 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 rounded px-2 py-1"
               >
                 Um mig
               </a>
@@ -93,7 +93,7 @@ export function Header() {
               <a
                 href="#contact"
                 onClick={(e) => scrollToSection(e, 'contact')}
-                className="text-sm tracking-wide uppercase text-stone-600 hover:text-stone-900 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-700 focus:ring-offset-2 rounded px-2 py-1"
+                className="text-sm tracking-wide uppercase text-emerald-700 hover:text-emerald-900 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 rounded px-2 py-1"
               >
                 Samband
               </a>
@@ -103,7 +103,7 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-stone-700 hover:text-stone-900 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-700 focus:ring-offset-2 rounded"
+            className="md:hidden p-2 text-stone-700 hover:text-emerald-900 transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 rounded"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -112,13 +112,13 @@ export function Header() {
 
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 py-6 border-t border-stone-200">
+          <div className="md:hidden mt-4 py-6 border-t border-emerald-200">
             <ul className="flex flex-col gap-4">
               <li>
                 <a
                   href="#services"
                   onClick={(e) => scrollToSection(e, 'services')}
-                  className="block text-sm tracking-wide uppercase text-stone-600 hover:text-stone-900 transition-colors py-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-700 focus:ring-offset-2 rounded px-2"
+                  className="block text-sm tracking-wide uppercase text-emerald-700 hover:text-emerald-900 transition-colors py-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 rounded px-2"
                 >
                   Þjónusta
                 </a>
@@ -127,7 +127,7 @@ export function Header() {
                 <a
                   href="#about"
                   onClick={(e) => scrollToSection(e, 'about')}
-                  className="block text-sm tracking-wide uppercase text-stone-600 hover:text-stone-900 transition-colors py-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-700 focus:ring-offset-2 rounded px-2"
+                  className="block text-sm tracking-wide uppercase text-emerald-700 hover:text-emerald-900 transition-colors py-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 rounded px-2"
                 >
                   Um mig
                 </a>
@@ -136,7 +136,7 @@ export function Header() {
                 <a
                   href="#contact"
                   onClick={(e) => scrollToSection(e, 'contact')}
-                  className="block text-sm tracking-wide uppercase text-stone-600 hover:text-stone-900 transition-colors py-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-amber-700 focus:ring-offset-2 rounded px-2"
+                  className="block text-sm tracking-wide uppercase text-emerald-700 hover:text-emerald-900 transition-colors py-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 rounded px-2"
                 >
                   Samband
                 </a>

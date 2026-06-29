@@ -57,14 +57,10 @@ export function About() {
 
                 <p>
                   Ég lauk BA-gráðu í íslensku frá Háskóla Íslands árið 2013, BA-prófi í lögfræði árið 2015 og meistaraprófi í lögfræði árið 2017. Samhliða námi starfaði ég sem prófarkalesari á Fréttablaðinu og síðar sem löglærður fulltrúi hjá Juris lögmannsstofu (2015-2017). Á árunum 2017-2024 starfaði ég sem aðstoðarmaður ráðherra í þremur ráðuneytum; heilbrigðisráðuneytinu (2017-2021), matvælaráðuneytinu (2021-2024) og innviðaráðuneytinu (2024). Nú starfa ég sem lögfræðingur á skrifstofu forstjóra Landspítala.
-               </p>
-
-                <p>
-                  Mín helstu áhugamál eru bókmenntir, tungumál, femínismi, stjórnmál og kaffidrykkja. Ef þú vilt vita meira um verð eða fyrirkomulag vinnunnar, hafðu endilega samband.
                 </p>
 
                 <p>
-                  Mín helstu áhugamál eru bókmenntir, tungumál, femínismi, stjórnmál og kaffidrykkja. Ég legg áherslu á gæði og nákvæmni í öllu sem ég tek mér fyrir hendur. Ef þú vilt vita meira, ekki hika við að hafa samband.
+                  Mín helstu áhugamál eru bókmenntir, tungumál, femínismi, stjórnmál og kaffidrykkja. Ef þú vilt vita meira um verð eða fyrirkomulag vinnunnar, hafðu endilega samband.
                 </p>
               </div>
             </motion.div>
